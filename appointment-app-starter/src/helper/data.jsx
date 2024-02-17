@@ -1,10 +1,10 @@
 export const appointmentData = [
   {
     id: 1,
-    patient: "Barry Vermont",
+    patient: "Arif T. Deniz",
     day: new Date(),
-    consulted: true,
-    doctor: "Dr. Hazel Valery",
+    consulted: false,
+    doctor: "Op. Dr. Harry Coming",
   },
   {
     id: 2,
@@ -19,6 +19,13 @@ export const appointmentData = [
     day: new Date(),
     consulted: true,
     doctor: "Dr. Jasmine Carpanter",
+  },
+  {
+    id: 4,
+    patient: "Barry Vermont",
+    day: new Date(),
+    consulted: true,
+    doctor: "Dr. Hazel Valery",
   },
 ];
 
@@ -49,7 +56,7 @@ export const doctorData = [
   },
   {
     id: 5,
-    name: "Harry Coming",
+    name: "Op. Dr. Harry Coming",
     dep: "Ophthalmologist",
     img: "./img/dr9.jpg",
   },

@@ -6,7 +6,15 @@ import { appointmentData } from "../helper/data";
 const Home = () => {
   // const [appointments, setAppointments] = useState(appointmentData);
   const [appointments, setAppointments] = useState(
-    JSON.parse(localStorage.getItem("list")) || []
+    JSON.parse(localStorage.getItem("list")) || [
+      {
+        id: 1,
+        patient: "Arif T. Deniz",
+        day: new Date(),
+        consulted: false,
+        doctor: "Op. Dr. Harry Coming",
+      },
+    ]
   );
   const handleAdd = (newAppointment) => {
     setAppointments([...appointments, newAppointment]);
@@ -32,7 +40,7 @@ const Home = () => {
 
   return (
     <main className="text-center mt-2">
-      <h1 className="display-5 text-danger">CLARUS HOSPITAL</h1>
+      <h1 className="display-5 text-danger">UNIVERSEYE HOSPITAL</h1>
       <Doctors handleAdd={handleAdd} />
       <AppointmentList
         appointments={appointments}
