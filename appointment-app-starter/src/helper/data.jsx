@@ -50,7 +50,7 @@ export const doctorData = [
   {
     id: 5,
     name: "Harry Coming",
-    dep: "Surgery",
+    dep: "Ophthalmologist",
     img: "./img/dr9.jpg",
   },
   {
