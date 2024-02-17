@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap/";
 import { doctorData } from "../helper/data";
 import AddModal from "./AddModal";
 
-const Doctors = () => {
+const Doctors = ({ handleAdd }) => {
   const [show, setShow] = useState(false);
   const [drName, setDrName] = useState("");
 
@@ -33,7 +33,12 @@ const Doctors = () => {
           </Col>
         ))}
       </Row>
-      <AddModal show={show} handleClose={handleClose} drName={drName} />
+      <AddModal
+        show={show}
+        handleClose={handleClose}
+        drName={drName}
+        handleAdd={handleAdd}
+      />
     </Container>
   );
 };
